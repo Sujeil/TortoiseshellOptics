@@ -69,3 +69,42 @@ header .bannercon{
   line-height: 1.2;
   padding: 1.5rem 5rem;
 }
+
+.icons{
+  height: 8rem;
+  padding: 3rem 0;
+  display: flex;
+}
+
+.icondivs{
+  padding: 0 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.icontext{
+  width: 5rems;
+  text-align: center;
+  align-items: baseline;
+}
+
+.icontext p{
+  padding-top: 5%;
+}
+
+#compexam{
+  width: 3.5rem;
+  padding-left: 35px;
+  padding-bottom: 1rem;
+}
+
+#custfit{
+  width: 5rem;
+  padding-bottom: 2.75rem;
+}
+
+#fastdel{
+  width: 5rem;
+  padding-bottom: 2.15rem;
+}
