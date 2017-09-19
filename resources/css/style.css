@@ -150,8 +150,14 @@ footer img{
 
 @media only screen and (max-width: 1024px){
   /*Laptop view*/
+  .container{
+      max-width: 100%;
+      margin: 0 auto;
+  }
+
   .banner{
-    background-size: 100%;
+    background-size: cover;
+    height: 22rem;
   }
 
   .navbar{
@@ -167,22 +173,36 @@ footer img{
 
   .bannertext{
     margin-top: 5rem;
-  }
-  /*.bannertext{
-    background-color: white;
-    margin-top: 10rem;
-    margin-right: -4rem;
-    display: flex;
-    justify-content: flex-end;
+    margin-right: 2rem;
   }
 
   .bannertext p{
-    color: black;
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 1.2;
-    padding: 1.5rem 5rem;
-  }*/
+    font-size: 1.33rem;
+    padding: .75rem 4rem;
+  }
+
+  .icons{
+    padding: 2rem 0;
+  }
+
+  .info{
+    display: flex;
+    justify-content: center;
+  }
+
+  .info h1{
+    margin-right: 10rem;
+  }
+
+  info p{
+    width: 30%;
+  }
+
+  #secp{
+    margin-left: 0;
+  }
+/*
+*/
 }
 
 @media only screen and (max-width: 470px){
