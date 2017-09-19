@@ -24,6 +24,7 @@ html{
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
+  width: 960px;
 }
 
 #whiteglasses{
@@ -34,8 +35,9 @@ html{
   margin-left: 1rem;
 }
 
-nav{
-  margin-left: 35%;
+.spacer{
+  margin: 0 19%;
+  display: flex;
 }
 
 nav a{
@@ -44,14 +46,20 @@ nav a{
   padding-left: 2rem;
 }
 
+header .bannercon{
+  justify-content: flex-end;
+}
+
+.bannercon{
+  display: flex;
+}
+
 .bannertext{
   background-color: white;
-  position: relative;
-  top: 10rem;
-  width: 600px;
+  margin-top: 10rem;
+  margin-right: -4rem;
   display: flex;
   justify-content: flex-end;
-  margin-right: 2rem;
 }
 
 .bannertext p{
@@ -60,5 +68,4 @@ nav a{
   font-size: 2rem;
   line-height: 1.2;
   padding: 1.5rem 5rem;
-  margin: 0;
 }
