@@ -13,18 +13,17 @@ html{
   height: 30rem;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   }
 
 .navbar{
-  top: 1rem;
   background-color: cadetblue;
   color: white;
   font-size: 1rem;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  width: 960px;
+  margin-top: 1rem;
 }
 
 #whiteglasses{
@@ -36,7 +35,7 @@ html{
 }
 
 .spacer{
-  margin: 0 19%;
+  margin: 0 17%;
   padding: 3% 0;
   display: flex;
 }
@@ -47,12 +46,9 @@ nav a{
   padding-left: 2rem;
 }
 
-header .bannercon{
-  justify-content: flex-end;
-}
-
 .bannercon{
   display: flex;
+  justify-content: flex-end;
 }
 
 .bannertext{
@@ -146,4 +142,53 @@ footer img{
   height: 1.5rem;
   padding-right: 1rem;
   margin-left: -2rem;
+}
+@media only screen and (max-width: 1142px) and (min-width:1025px){
+  /*Between desktop and laptop view*/
+
+}
+
+@media only screen and (max-width: 1024px){
+  /*Laptop view*/
+  .banner{
+    background-size: 100%;
+  }
+
+  .navbar{
+    color: pink;
+    width: 100%;
+    margin-top: 0;
+    padding: 1rem 1rem;
+  }
+
+  .spacer{
+    padding:0;
+  }
+
+  .bannertext{
+    margin-top: 5rem;
+  }
+  /*.bannertext{
+    background-color: white;
+    margin-top: 10rem;
+    margin-right: -4rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bannertext p{
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 1.5rem 5rem;
+  }*/
+}
+
+@media only screen and (max-width: 470px){
+  /*Cellphone view*/
+}
+
+@media only screen and (max-width: 345px){
+  /*Smallest view*/
 }
