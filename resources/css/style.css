@@ -10,11 +10,14 @@ html{
 }
 
 .banner{
-  height: 30rem;
+  height: 31rem;
   margin-top: 0;
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  }
+
+  #backimg{
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
 .navbar{
@@ -65,7 +68,7 @@ nav a{
 .bannertext{
   background-color: white;
   margin-top: 10rem;
-  margin-right: -2rem;
+  margin-right: -4rem;
   padding: 1.5rem 5rem;
   display: flex;
   justify-content: flex-end;
@@ -176,14 +179,17 @@ footer img{
 @media only screen and (max-width: 1024px){
   /*Laptop view*/
   .container{
-      max-width: 100%;
+      max-width: 1024px;
       margin: 0 auto;
   }
 
   .banner{
-    background-size: cover;
-    overflow: hidden;
     height: 22rem;
+  }
+
+  #backimg{
+    background-size: cover;
+    width: 100%;
   }
 
   .navbar{
@@ -255,6 +261,19 @@ footer img{
 
 @media only screen and (max-width: 470px){
   /*Cellphone view*/
+  .container{
+      max-width: 470px;
+      margin: 0 auto;
+  }
+
+  .banner{
+    height: 17rem;
+  }
+
+  #backimg{
+    background-position: 20%;
+  }
+
   .navbar p{
     display: none;
   }
@@ -271,6 +290,23 @@ footer img{
     justify-content: flex-end;
   }
 
+  .bannercon{
+    margin-top: 9rem;
+    display: flex;
+  }
+
+  .bannertext{
+    padding: 1rem;
+    margin-top: 0;
+    margin-right: 0;
+    width: 100%;
+    justify-content: center;    
+  }
+
+  .bannertext p{
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 345px){
