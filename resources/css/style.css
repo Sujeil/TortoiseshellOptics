@@ -21,7 +21,7 @@ html{
   background-color: cadetblue;
   color: white;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
   max-width: 960px;
   display: flex;
   align-items: center;
@@ -56,7 +56,7 @@ nav a{
 .bannertext{
   background-color: white;
   margin-top: 10rem;
-  margin-right: -4rem;
+  margin-right: -2rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -72,11 +72,12 @@ nav a{
 .icons{
   height: 8rem;
   padding: 3rem 0;
+  width: 905px;
   display: flex;
 }
 
 .icondivs{
-  padding: 0 6rem;
+
   justify-content: center;
   align-items: center;
 }
@@ -93,9 +94,18 @@ nav a{
   padding-bottom: 1rem;
 }
 
+.first{
+  margin-left: 6rem;
+  padding-left: 2rem;
+  padding-right: 0;
+}
 #custfit{
   width: 5rem;
   padding-bottom: 2.75rem;
+}
+
+.middle{
+  padding: 0 6rem;
 }
 
 #fastdel{
@@ -103,8 +113,13 @@ nav a{
   padding-bottom: 2.15rem;
 }
 
+.last{
+  padding-left: 0;
+}
+
 .info{
   display: flex;
+  width: 935px;
 }
 
 .info h1{
@@ -112,7 +127,8 @@ nav a{
   font-weight: bold;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
-  margin-right: 15rem;
+  margin-right: 9rem;
+  margin-left: 1.5rem;
   color: white;
   background-color: cadetblue;
 }
@@ -120,12 +136,13 @@ nav a{
 .info p{
   width: 35%;
   margin-top: 1rem;
-  margin-right: 5%;
+  margin-right: 4.5%;
+  margin-left: 2.5%;
   margin-bottom: 5rem;
 }
 
 #secp{
-  margin-left: 5rem;
+  margin-left: 5%;
 }
 
 footer{
