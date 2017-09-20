@@ -53,6 +53,10 @@ nav a{
   padding-left: 2rem;
 }
 
+#menu{
+  display: none;
+}
+
 .bannercon{
   display: flex;
   justify-content: flex-end;
@@ -183,9 +187,11 @@ footer img{
   }
 
   .navbar{
-    color: pink;
     margin-top: 0;
+  }
 
+  .navbar p{
+    color: pink;
   }
 
   .spacer{
@@ -249,6 +255,22 @@ footer img{
 
 @media only screen and (max-width: 470px){
   /*Cellphone view*/
+  .navbar p{
+    display: none;
+  }
+
+  nav{
+    display: none;
+  }
+
+  #menu{
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
 }
 
 @media only screen and (max-width: 345px){
