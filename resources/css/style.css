@@ -11,6 +11,7 @@ html{
 
 .banner{
   height: 30rem;
+  margin-top: 0;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,14 +21,15 @@ html{
   background-color: cadetblue;
   color: white;
   font-size: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem;
+  max-width: 960px;
   display: flex;
   align-items: center;
-  margin-top: 1rem;
 }
 
 #whiteglasses{
   height: 1.5rem;
+  padding-left: 2rem;
 }
 
 .navbar p{
@@ -35,15 +37,15 @@ html{
 }
 
 .spacer{
-  margin: 0 17%;
-  padding: 3% 0;
+  height: 1rem;
+  width: 23%;
   display: flex;
 }
 
 nav a{
   text-decoration: none;
   color: white;
-  padding-left: 2rem;
+  padding: 0 2rem;
 }
 
 .bannercon{
@@ -79,15 +81,10 @@ nav a{
   align-items: center;
 }
 
-
-.icontext{
-  width: 5rems;
-  text-align: center;
-  align-items: baseline;
-}
-
 .icontext p{
   padding-top: 5%;
+  text-align: center;
+  align-items: baseline;
 }
 
 #compexam{
@@ -156,13 +153,14 @@ footer img{
   }
 
   .banner{
-    background-size: cover;
+    background-size: auto 100%;
+    overflow: hidden;
+    margin-left: -2rem;
     height: 22rem;
   }
 
   .navbar{
     color: pink;
-    width: 100%;
     margin-top: 0;
     padding: 1rem 1rem;
   }
@@ -181,12 +179,11 @@ footer img{
     padding: .75rem 4rem;
   }
 
-  .icons{
-    padding: 2rem 0;
+  .icondivs{
+    justify-content: space-around;
   }
 
   .info{
-    display: flex;
     justify-content: center;
   }
 
@@ -194,14 +191,36 @@ footer img{
     margin-right: 10rem;
   }
 
-  info p{
-    width: 30%;
+  .info p{
+    width: 25%;
+    padding: 0.5rem 0rem;
+    margin-right: 8.5rem;
   }
 
   #secp{
     margin-left: 0;
   }
-/*
+/*.info h1{
+  width: 10rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  margin-right: 15rem;
+  color: white;
+  background-color: cadetblue;
+}
+
+.info p{
+  width: 35%;
+  margin-top: 1rem;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+#secp{
+  margin-left: 5rem;
+}
+
 */
 }
 
