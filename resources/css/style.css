@@ -14,7 +14,7 @@ html{
   margin-top: 0;
   }
 
-  #backimg{
+#backimg{
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -87,6 +87,7 @@ nav a{
   padding: 3rem 0;
   width: 905px;
   display: flex;
+  flex-direction: row;
 }
 
 .icondivs{
@@ -113,7 +114,8 @@ nav a{
 }
 
 .middle{
-  padding: 0 6rem;
+  margin: 0 6rem;
+  padding-left: 1rem;
 }
 
 #custfit{
@@ -133,7 +135,7 @@ nav a{
 
 .info{
   display: flex;
-  width: 935px;
+  flex-direction: row;
 }
 
 .info h1{
@@ -141,22 +143,26 @@ nav a{
   font-weight: bold;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
-  margin-right: 9rem;
-  margin-left: 1.5rem;
   color: white;
   background-color: cadetblue;
 }
 
+#firstinfo h1{
+  margin-left: 2.5rem;
+}
+
+#secinfo h1{
+  margin-right: 15rem;
+}
+
 .info p{
-  width: 35%;
   margin-top: 1rem;
-  margin-right: 4.5%;
-  margin-left: 2.5%;
   margin-bottom: 5rem;
 }
 
-#secp{
-  margin-left: 5%;
+#firstinfo p{
+  width: 35%;
+  margin-left: 2.5rem;
 }
 
 footer{
@@ -300,12 +306,61 @@ footer img{
     margin-top: 0;
     margin-right: 0;
     width: 100%;
-    justify-content: center;    
+    justify-content: center;
   }
 
   .bannertext p{
     font-size: 1rem;
     text-align: center;
+  }
+
+  .icons{
+    display: flex;
+    flex-direction: column;
+    margin: 3.77rem;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .first{
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  #compexam{
+    padding-left: 0;
+  }
+
+  .middle{
+    padding: 0;
+    margin: 0;
+  }
+
+  #custfit{
+    margin-top: 1.54rem;
+  }
+
+  .last{
+    padding: 0;
+  }
+
+  #fastdel{
+    margin-top: 1.54rem;
+    padding-bottom: 0;
+  }
+
+  .icontext{
+    font-size: 0.77rem;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h1info{
+    justify-content: center;
   }
 }
 
