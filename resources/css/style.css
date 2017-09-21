@@ -136,6 +136,7 @@ nav a{
 .info{
   display: flex;
   flex-direction: row;
+  width: 905px;
 }
 
 .info h1{
@@ -147,23 +148,16 @@ nav a{
   background-color: cadetblue;
 }
 
-#firstinfo h1{
-  margin-left: 2.5rem;
-}
-
-#secinfo h1{
-  margin-right: 15rem;
+#secinfo{
+  margin-left: -65%;
 }
 
 .info p{
   margin-top: 1rem;
   margin-bottom: 5rem;
+  width: 35%;
 }
 
-#firstinfo p{
-  width: 35%;
-  margin-left: 2.5rem;
-}
 
 footer{
   display: flex;
