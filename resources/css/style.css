@@ -18,8 +18,9 @@ html{
 #backimg{
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
   }
+
 
 .navbar{
   background-color: cadetblue;
@@ -57,7 +58,7 @@ nav a{
   padding-left: 2rem;
 }
 
-#menu{
+.smallsize{
   display: none;
 }
 
@@ -177,7 +178,7 @@ footer img{
 }
 
 @media only screen and (max-width: 1024px){
-
+ 
   .container{
       max-width: 1024px;
       margin: 0 auto;
@@ -187,21 +188,16 @@ footer img{
     height: 22rem;
   }
 
-  #backimg{
-    background-size: cover;
-    width: 100%;
-  }
-
   .navbar{
     margin-top: 0;
   }
 
-  .navbar p{
-    color: pink;
-  }
-
   .spacer{
     height: 0;
+  }
+
+  #backimg{
+    background-position: 50%;
   }
 
   .bannertext{
@@ -210,7 +206,7 @@ footer img{
     padding: .75rem 4rem;
   }
 
-  .bannertext p{
+  .bannertext h1{
     font-size: 1.33rem;
   }
 
@@ -240,10 +236,9 @@ footer img{
 }
 
 @media only screen and (max-width: 470px){
-  /*Cellphone view*/
   .container{
-      max-width: 470px;
-      margin: 0 auto;
+    max-width: 470px;
+    margin: 0 auto;
   }
 
   .banner{
@@ -252,38 +247,37 @@ footer img{
 
   #backimg{
     background-position: 20%;
+    background-size: cover;
   }
 
   .navbar p{
     display: none;
   }
 
-  nav{
+  .largesize{
     display: none;
   }
 
-  #menu{
+  .smallsize{
     color: white;
     font-size: 1rem;
-    width: 100%;
     display: flex;
     justify-content: flex-end;
   }
 
   .bannercon{
     margin-top: 9rem;
-    display: flex;
+    margin-right: 0;
   }
 
   .bannertext{
     padding: 1rem;
     margin-top: 0;
     margin-right: 0;
-    width: 100%;
-    justify-content: center;
+    width: 470px;
   }
 
-  .bannertext p{
+  .bannertext h1{
     font-size: 1rem;
     text-align: center;
   }
@@ -291,7 +285,7 @@ footer img{
   .icons{
     display: flex;
     flex-direction: column;
-    margin: 3.77rem;
+    margin: 3.77rem 0;
     padding: 0;
     align-items: center;
     text-align: center;
@@ -328,14 +322,39 @@ footer img{
     font-size: 0.77rem;
   }
 
-  .info{
-    display: flex;
-    flex-direction: column;
+  .outsideinfo{
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 0;
   }
 
-  .h1info{
-    justify-content: center;
+  .info{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
+
+  .info h1{
+    width: auto;
+  }
+
+  footer{
+    align-content: center;
+    justify-content: center;
+    margin-right: 0;
+    width: auto;
+  }
+
+  footer h2{
+    display: none;
+  }
+
+  footer img{
+    margin: 0;
+    padding: 0;
+  }
+
 }
 
 @media only screen and (max-width: 345px){
