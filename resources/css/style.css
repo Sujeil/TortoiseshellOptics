@@ -1,7 +1,7 @@
 html{
   font-size: 18px;
   font-family: Helvetica, sans-serif;
-  line-height: 1.4rem;
+  line-height: 1.4;
 }
 
 .container{
@@ -9,6 +9,7 @@ html{
   margin: 0 auto;
 }
 
+/*Top*/
 .banner{
   height: 31rem;
   margin-top: 0;
@@ -74,7 +75,7 @@ nav a{
   justify-content: flex-end;
 }
 
-.bannertext p{
+.bannertext h1{
   color: black;
   font-weight: bold;
   font-size: 2rem;
@@ -132,11 +133,16 @@ nav a{
   padding-bottom: 2.15rem;
 }
 
-
-.info{
+.outsideinfo{
   display: flex;
   flex-direction: row;
-  width: 905px;
+}
+
+.info{
+  width: 35%;
+  margin-bottom: 5rem;
+  margin-left: 3rem;
+  margin-right: 1.5rem;
 }
 
 .info h1{
@@ -148,14 +154,8 @@ nav a{
   background-color: cadetblue;
 }
 
-#secinfo{
-  margin-left: -65%;
-}
-
 .info p{
   margin-top: 1rem;
-  margin-bottom: 5rem;
-  width: 35%;
 }
 
 
@@ -172,12 +172,12 @@ footer img{
   margin-left: -2rem;
 }
 @media only screen and (max-width: 1142px) and (min-width:1025px){
-  /*Between desktop and laptop view*/
+
 
 }
 
 @media only screen and (max-width: 1024px){
-  /*Laptop view*/
+
   .container{
       max-width: 1024px;
       margin: 0 auto;
