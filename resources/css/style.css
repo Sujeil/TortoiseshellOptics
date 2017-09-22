@@ -233,30 +233,10 @@ footer img{
   }
 
   .info{
-    justify-content: center;
-  }
-
-  .h1info{
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  .info h1{
-    margin-right:2rem;
-    margin-left: 7rem;
-  }
-
-  .info p{
+    margin-left: 7.5rem;
+    margin-right: .5rem;
     width: 25%;
-    padding: 0.5rem 0rem;
-    margin-right: 8.5rem;
   }
-
-  #secp{
-    margin-left: 0;
-  }
-/*
-*/
 }
 
 @media only screen and (max-width: 470px){
