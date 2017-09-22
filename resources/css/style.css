@@ -268,13 +268,16 @@ footer img{
   .bannercon{
     margin-top: 9rem;
     margin-right: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .bannertext{
     padding: 1rem;
     margin-top: 0;
     margin-right: 0;
-    width: 470px;
+    width: 100%;
+    justify-content: center;
   }
 
   .bannertext h1{
